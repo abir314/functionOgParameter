@@ -9,30 +9,30 @@
     <p>Ferdighet 2a - Alternative eventhandlere: onchange osv.</p>
     <input type="text" onchange="testOnLoad(2)" oninput="testOnLoad(3)" />
     <h3 onmouseover="testOnLoad(4)" onmouseout="testOnLoad(5)">Test test test</h3>
-    <h2 id="${a}"></h2>
+    <h2 id="id"></h2>
   
 
     <a href="https://www.w3schools.com/jsref/dom_obj_event.asp">Mer informasjon her</a>
     <script>
-       
-        function testOnLoad(a) {
-            document.getElementById("${a}").innerHTML += '<li>onload</li>';
+       var a = 0;
+        function testOnLoad(a=1) {
+            document.getElementById("id").innerHTML += '<li>onload</li>';
         }
 
-        function testOnLoad(a) {
-            document.getElementById("${a}").innerHTML += '<li>onchange</li>';
+        function testOnLoad(a=2) {
+            document.getElementById("id").innerHTML += '<li>onchange</li>';
         }
 
-        function testOnLoad(a) {
-            document.getElementById("${a}").innerHTML += '<li>oninput</li>';
+        function testOnLoad(a=3) {
+            document.getElementById("id").innerHTML += '<li>oninput</li>';
         }
 
-        function testOnLoad(a) {
-            document.getElementById("${a}").innerHTML += '<li>onmouseover</li>';
+        function testOnLoad(a=4) {
+            document.getElementById("id").innerHTML += '<li>onmouseover</li>';
         }
 
-        function testOnLoad(a) {
-            document.getElementById("${a}").innerHTML += '<li>onmouseout</li>';
+        function testOnLoad(a=5) {
+            document.getElementById("id").innerHTML += '<li>onmouseout</li>';
         }
        
     </script>
